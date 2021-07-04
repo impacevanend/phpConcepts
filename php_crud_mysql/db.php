@@ -16,6 +16,9 @@ base de datos -> php_mysql_cr♪d
 
 <?php
 
+//*Iniciando sesión en nuestra aplicación
+
+session_start(); //*para guardar datos dentro de la sesión.
 
 $conn = mysqli_connect(
     'localhost',

@@ -11,7 +11,14 @@ if(isset($_POST['save_task'])){
         die('Query Failed');
 
     }
-    echo 'saved';
+
+    //*Guardando mensaje en sesión
+    $_SESSION['message'] = 'Task Save succesfully';
+    $_SESSION['message_type'] = 'success';
+
+
+    //*echo 'saved'; instrucción indica que el registro fue exitoso
+    header("Location: index.php");
 
 }
 
