@@ -14,7 +14,7 @@
           
               <div class="card card-body">
                     <!--* Creación del formulario, datos enviados por medio de POST-> save_task.php -->
-                  <form action="save_task.php" method="POST">
+                  <form action="task_save.php" method="POST">
 
                       <div class="form-group">
 
