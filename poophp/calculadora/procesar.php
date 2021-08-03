@@ -1,13 +1,10 @@
 <?php 
+	require_once "claseCalculo.php";
+	$calcular = new Calculadora();
 
-require_once(ClaseCalculo.php);
+	$val1=$_POST['val1'];
+	$val2=$_POST['val2'];
+	$opcion=$_POST['opcion'];
 
-$calcular = new Calculadora();
-
-$val1 = $_POST['val1'];
-$val2 = $_POST['val2'];
-$opcion = $_POST['opcion'];
-
-echo $calcular->calcularDatos($val1, $val2,$opcion);
-
-?>
+	echo $calcular->calcularDatos($val1,$val2,$opcion);
+ ?>
